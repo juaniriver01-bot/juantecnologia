@@ -1,0 +1,19 @@
+body {
+  font-family: $font-base;
+  background-color: lighten($color-primario, 40%);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $color-primario;
+  text-align: center;
+}
+
+a {
+  color: $color-secundario;
+
+  &:hover {
+    color: darken($color-secundario, 10%);
+  }
+}

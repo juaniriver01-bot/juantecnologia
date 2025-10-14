@@ -1,0 +1,16 @@
+@mixin flexRowCenter {
+  justify-content: center;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box-model($margen, $padding, $bordes) {
+  margin: $margen;
+  padding: $padding;
+  border: $bordes;
+}

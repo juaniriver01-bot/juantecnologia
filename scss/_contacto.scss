@@ -1,0 +1,31 @@
+.contacto {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input, textarea {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: if($modo-oscuro, darken($color-secundario, 20%), $color-secundario);
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($color-secundario, 10%);
+      }
+    }
+  }
+}
