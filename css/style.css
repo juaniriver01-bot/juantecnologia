@@ -160,3 +160,33 @@ footer img{
   background-color: gray;
   color: #606077;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  color: #222;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+a:hover {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+
+.logo {
+  width: 100px;             
+  display: block;
+  margin: 10px auto;         
+  animation: girarLogo 6s linear infinite; 
+}
+
+@keyframes girarLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
